@@ -1,4 +1,4 @@
-# Connect to EC2 Quiz
+# Quiz
 
 ## 1. Connecting to Large Organization's Location-Based IT Departments
 
@@ -11,9 +11,8 @@ Your organization is large and has many location-based IT departments. You do no
 - [x] AWS Systems Manager Session Manager
 - [ ] Remote Desktop Protocol
 
-**SUBMIT**
+#### Explanation
 
-**Correct:**
 Both AWS Systems Manager and EC2 Instance Connect provide a secure way to connect to your Linux instances without requiring key pairs. You use AWS Identity and Access Management (IAM) policies and principals to control SSH access to your instances. EC2 Instance Connect removes the need to share and manage SSH key pairs.
 
 ---
@@ -29,9 +28,8 @@ Your security department has rejected your requests to allow administrative traf
 - [x] AWS Systems Manager Session Manager
 - [ ] Connect by PuTTY
 
-**SUBMIT**
+#### Explanation
 
-**Correct:**
 With Session Manager, you can manage your Amazon EC2 instances through a browser-based shell or through the AWS Command Line Interface (AWS CLI). Session Manager removes the need to open inbound ports, manage SSH keys, or use bastion hosts.
 
 ---
@@ -47,7 +45,6 @@ You need to administer your Amazon EC2 Linux instance from one of your company's
 - [ ] Remote Desktop Protocol
 - [ ] Amazon EC2 Instance Connect
 
-**SUBMIT**
+#### Explanation
 
-**Correct:**
 SSH authentication to an EC2 instance is done through the use of the key pair you associated with the instance when you launched it. The key pair makes it possible to secure, connect, and manage the instance. Losing the key pair can result in a loss of access to the instance.
