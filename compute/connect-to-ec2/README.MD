@@ -1,4 +1,4 @@
-# Quiz
+# Connect to EC2
 
 ## 1. Connecting to Large Organization's Location-Based IT Departments
 
