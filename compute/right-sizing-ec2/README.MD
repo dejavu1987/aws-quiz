@@ -130,3 +130,74 @@ When running an instance store-backed EC2 instance, which steps must you take to
 #### Explanation
 
 To use a different instance in an instance store-backed EC2 instance, you need to create an AMI from your existing image, launch a new instance from this AMI, select the instance type that you want, and then migrate your application to the new instance.
+
+## Changing Instance Type for Workload Optimization
+
+What options do you have if you have chosen an instance type that appears to be the wrong fit for your workload? (Select TWO.)
+
+- [x] Switch the existing instance type to a new one.
+- [x] Launch a new instance and migrate your application to the new instance.
+- [ ] Stop the instance, change the type, and migrate the workload.
+- [ ] Stop the instance, terminate the instance, choose another type, and then migrate your application.
+- [ ] You cannot run multiple, different instance types. They must all be the same instance type.
+
+#### Explanation
+
+If you find that your chosen instance type is not suitable for your workload, you can either switch the existing instance type to a new one or launch a new instance with the desired type and migrate your application to the new instance. This allows you to optimize your workload based on changing requirements.
+
+## Advice on Changing to the Newest Amazon EC2 Instance Type
+
+What advice would you give someone about changing to the newest Amazon EC2 instance type? (Select THREE.)
+
+- [x] Change if you want an instance that is optimized for a specific workload.
+- [ ] Never change.
+- [x] Change for better performance.
+- [x] Change for greater cost efficiency.
+- [ ] Only change in rare circumstances because AWS generally manages new instances for you.
+- [ ] Use general-purpose instances to avoid changing.
+
+#### Explanation
+
+Changing to the newest Amazon EC2 instance type can be advisable if you want an instance optimized for a specific workload, if you seek better performance, or if you aim for greater cost efficiency. AWS regularly introduces new instance types with improvements, and selecting the right instance type based on your requirements can lead to enhanced performance and cost savings.
+
+## Meaning of "g" in Instance Name c6g.large
+
+What does the letter g mean in the instance name c6g.large?
+
+- [ ] Instance family
+- [x] AWS Graviton processor
+- [ ] Gigabyte
+- [ ] Generation
+
+#### Explanation
+
+In the instance name c6g.large, the letter "g" signifies that the instance is powered by AWS Graviton processors. Instance names can include additional capabilities, and the letter "g" specifically denotes the use of AWS Graviton processors.
+
+## AWS Nitro System Functions Offloaded onto Hardware Cards
+
+Which of the following functions did the AWS Nitro System offload onto hardware cards? (Select THREE.)
+
+- [x] Virtual private cloud (VPC) networking
+- [ ] Security groups
+- [x] Instance storage
+- [x] Amazon Elastic Block Store (Amazon EBS)
+- [ ] Amazon Elastic File System (Amazon EFS)
+- [ ] Amazon Simple Storage Service (Amazon S3)
+
+#### Explanation
+
+The AWS Nitro System offloads certain functions onto dedicated hardware cards for optimized performance:
+
+- **Nitro Card for VPC Networking:**
+  - Handles VPC data plan offload, including encapsulation, security groups, flow logs, routing, port mirroring, DNS, and DHCP.
+  - Performs data-in-transit with no performance overhead to the host.
+  - Offers an Elastic Network Adapter (ENA) and an Elastic Fabric Adapter (EFA).
+
+- **Nitro Card for Amazon EBS:**
+  - Supports storage acceleration for Amazon EBS.
+  - Provides transparent encryption.
+  - Monitors the SSD drives for wear.
+
+- **Nitro Card for Instance Storage:**
+  - Utilizes NVM Express (NVMe) for local instance storage.
+
