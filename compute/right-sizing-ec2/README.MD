@@ -201,3 +201,77 @@ The AWS Nitro System offloads certain functions onto dedicated hardware cards fo
 - **Nitro Card for Instance Storage:**
   - Utilizes NVM Express (NVMe) for local instance storage.
 
+## AWS Resource Tags
+
+Which items make up a resource tag? (Select TWO.)
+
+- [ ] Instance type
+- [ ] Amazon Machine Image (AMI)
+- [x] Key
+- [x] Value
+- [ ] Instance family
+
+#### Explanation
+
+A tag is a label that you assign to your resources, consisting of a key and an optional value:
+
+- **Key:** A name for the tag, which is case-sensitive.
+- **Value:** An optional, corresponding value for the tag.
+
+## Instance Scaling
+
+What happens to instances when they scale out?
+
+- [ ] Larger instances are created.
+- [x] Additional instances of the same type are created.
+- [ ] Additional instances of a different type are created.
+- [ ] Smaller instances are created.
+
+#### Explanation
+
+When scaling out, additional instances of the same type are created. This is typically done in response to increased demand to distribute the workload and maintain performance.
+
+## Identifying Under-Utilized EC2 Instances
+
+You are looking to downsize an instance. Which tool helps you identify only under-utilized EC2 instances?
+
+- [ ] AWS Compute Optimizer
+- [ ] AWS Cost and Usage Reports
+- [x] AWS Cost Explorer
+- [ ] AWS Budgets
+
+#### Explanation
+
+AWS Cost Explorer helps you identify under-utilized EC2 instances that can be downsized. This tool only shows downsizing information of your current instance to another instance in that same instance family. It also gives you detailed information on the potential impact to your costs by taking into account any of your Reserved Instances and instances in a Savings Plan.
+
+## Identifying Downsizing and Upsizing Opportunities
+
+Your instances are part of an Auto Scaling group. You need to identify opportunities to downsize and upsize these instances. Which tool helps you identify both downsizing and upsizing Amazon EC2 instances?
+
+- [ ] Amazon CloudWatch
+- [x] AWS Compute Optimizer
+- [ ] AWS Trusted Advisor
+- [ ] AWS Cost Explorer
+
+#### Explanation
+
+AWS Compute Optimizer provides recommendations for both downsizing and upsizing Amazon EC2 instances. It offers suggestions for instances that are part of an Auto Scaling group, helping you optimize your resources for better performance and cost efficiency.
+
+## Changing Instance Type of EBS-Backed Instance
+
+The following steps are used to change the instance type of an EBS-backed instance when the new instance type is compatible with the original instance type. Which is the correct order of the steps?
+
+- [x] 1– Stop the instance; 2 – Select the new instance type; 3 – Install new drivers; 4 – Start the instance from the Amazon EC2 console.
+- [ ] 1– Stop the instance; 2 – Select the new instance type; 3 – Start the instance from the Amazon EC2 console; 4 – Install new drivers.
+- [ ] 1– Select the new instance type; 2 – Install new drivers; 3 – Stop the instance; 4 – Start the instance from the Amazon EC2 console.
+- [ ] 1– Stop the instance; 2 – Select the new instance type; 3 – Install new drivers; 4 – Start the instance from the Amazon EC2 console.
+
+#### Explanation
+
+1. If the new instance type requires drivers that are not installed on the existing instance, you must connect to your instance and install drivers first (for example, when moving to an instance based on the AWS Nitro System).
+
+2. Stop the instance from the Amazon EC2 console.
+
+3. With the instance still selected, choose Actions, Instance settings, Change instance type, and select the new instance type. If the instance type you selected supports EBS optimization, select EBS optimized to enable EBS optimization.
+
+4. Start the instance from the Amazon EC2 console.
