@@ -223,7 +223,7 @@ You can configure CloudTrail to deliver log files from multiple Regions to a sin
 
 In the console, by default, you create a trail that logs events in all AWS Regions. To log events in a single Region, use the AWS CLI.
 
-# Amazon EventBridge for Observability
+## Amazon EventBridge for Observability
 
 Which statement best describes how Amazon EventBridge can be used for observability?
 
