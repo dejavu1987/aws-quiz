@@ -86,3 +86,14 @@ What is the best purpose for authoring using the AWS Management Console?
 #### Explanation
 
 That's correct! The Lambda management console is best for simple functions with no custom libraries and is a great way to start experimenting with Lambda.
+
+## Match Items to Descriptions
+
+Drag the items in the left column to the correct items on the right column.
+
+| Items                  | Descriptions                                             |
+| ---------------------- | -------------------------------------------------------- |
+| CloudFormation Template | Like a house blueprint – you can treat infrastructure as code |
+| AWS SAM Template        | Streamlined CloudFormation Template for serverless applications |
+| AWS SAM CLI             | Tool for local testing and debugging of serverless applications |
+| Deploy                 | AWS SAM CLI command for deploying AWS SAM template       |
