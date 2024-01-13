@@ -206,3 +206,35 @@ Connect using a SSH client:
 ssh -i  myprivate-key.pem INSTANCE_ID.port0@serial-console.ec2-instance-connect.us-east-1.aws(opens in a new tab)
 See Connect to the EC2 Serial Console (opens in a new tab)for additional information.
 ```
+
+## Types of Trails in AWS CloudTrail
+
+What are the types of trails that can be created in AWS CloudTrail that permit delivery to an Amazon S3 bucket? (Select TWO.)
+
+- [x] A trail that applies to all Regions
+- [ ] A trail that applies to all partitions
+- [ ] A trail that applies to the AWS GovCloud (US) Region
+- [x] A trail that applies to one Region
+- [ ] A trail that applies to just instances
+
+#### Explanation
+
+You can configure CloudTrail to deliver log files from multiple Regions to a single S3 bucket for a single account. A trail can log events to all Regions or to a single Region.
+
+In the console, by default, you create a trail that logs events in all AWS Regions. To log events in a single Region, use the AWS CLI.
+
+# Amazon EventBridge for Observability
+
+Which statement best describes how Amazon EventBridge can be used for observability?
+
+- [ ] EventBridge is a bridge, where Amazon Simple Queue Service (Amazon SQS) messages are sent to Amazon Simple Notification Service (Amazon SNS). This bridge authorizes cloud support staff to be emailed when messages are published.
+
+- [ ] EventBridge provides a queue and topic service that is highly scalable, simple to use, and doesn't require you to set up message brokers. The cloud support staff then subscribe to specific system topics for outages.
+
+- [x] EventBridge is a service where event producers can publish events on an event bus. Rules are configured with event patterns to match route matching events to a targeted service such as Amazon Simple Notification Service (Amazon SNS) to email cloud support staff.
+
+- [ ] EventBridge is not a service that can be used for observability in monitoring and troubleshooting tasks.
+
+#### Explanation
+
+Amazon EventBridge is a serverless event bus service that allows event producers to publish events on an event bus. Rules can be configured with event patterns to match and route events to targeted services, such as Amazon Simple Notification Service (Amazon SNS). This capability is useful for observability, monitoring, and troubleshooting tasks, allowing cloud support staff to react in real time to various data sources.
