@@ -97,3 +97,18 @@ Drag the items in the left column to the correct items on the right column.
 | AWS SAM Template        | Streamlined CloudFormation Template for serverless applications |
 | AWS SAM CLI             | Tool for local testing and debugging of serverless applications |
 | Deploy                 | AWS SAM CLI command for deploying AWS SAM template       |
+
+
+## Troubleshooting Lambda Function Duration
+
+A developer has been asked to troubleshoot a Lambda function that is in production. They've been told that it runs for 5 minutes and has been asked to reduce its duration to save on billable costs. Which actions should the developer take? (Select THREE.)
+
+- [ ] Test the function from the console once to confirm that it is taking 5 minutes.
+- [x] Confirm whether 5 minutes is the typical duration through production monitoring.
+- [ ] Decrease the timeout to 4 minutes.
+- [x] Test at higher memory configurations and compare the duration and cost at each configuration.
+- [x] Check whether any unnecessary SDK components are in the deployment package.
+
+#### Explanation
+
+A developer must make sure that a 5-minute duration isn't reflective of a single invocation. Instead of running it once from the console, they need to examine how it actually runs in production. Decreasing the timeout would save costs, but it would probably mean that the function would frequently fail to complete. A best practice is to experiment with different memory configurations and estimate whether a higher memory configuration would actually be less expensive. They can also determine whether there are unnecessary components in the function itself that could be removed to speed up its initialization.
