@@ -128,3 +128,19 @@ What are some reasons a developer would set a concurrency limit (or reserve) on 
 #### Explanation
 
 Setting a concurrency limit helps manage costs, regulate the processing time for a batch of events, and match the limit with a downstream resource. It is not used to help CloudWatch track logging events, ensure efficient clearing of Amazon SQS queues, or limit memory usage.
+
+
+## Lambda Function Versioning
+
+Which statements are true? (Select THREE.)
+
+- [x] When you create a Lambda function, only one version exists: the $LATEST version.
+- [ ] Versioning is a requirement for your Lambda functions.
+- [ ] You can specify a versioning number scheme that Lambda will use.
+- [x] You can reference any version with an alias.
+- [x] You can reference a version or an alias in the Amazon Resource Name (ARN).
+
+#### Explanation
+
+Correct! When you create a Lambda function, only one version exists: the $LATEST version. Versioning is not a requirement for Lambda functions, and you cannot specify a versioning number scheme. You can reference any version with an alias, and you can reference a version or an alias in the Amazon Resource Name (ARN).
+
