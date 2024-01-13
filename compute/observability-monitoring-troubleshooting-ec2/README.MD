@@ -30,7 +30,6 @@ Which Amazon EC2 metrics can you view in the instance dashboard on the Amazon EC
 
 You can monitor CPU utilization, disk I/O, and network utilization for your EC2 instances in the instance dashboard on the Amazon EC2 console. These metrics help you optimize and manage the performance of your instances.
 
-# Quiz
 
 ## Amazon CloudWatch Metric Definition
 
