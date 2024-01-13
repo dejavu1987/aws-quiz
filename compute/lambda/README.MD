@@ -144,3 +144,18 @@ Which statements are true? (Select THREE.)
 
 Correct! When you create a Lambda function, only one version exists: the $LATEST version. Versioning is not a requirement for Lambda functions, and you cannot specify a versioning number scheme. You can reference any version with an alias, and you can reference a version or an alias in the Amazon Resource Name (ARN).
 
+## Task Matching with AWS Tools
+
+Match the task to the tool you would use to perform it.
+
+| Task                                                                       | Tool                  |
+| -------------------------------------------------------------------------- | --------------------- |
+| Review metrics on invocations, errors, and throttling for a Lambda function | Amazon CloudWatch     |
+| Manually review errors for Lambda invocations that failed and must be addressed | Dead-letter queue   |
+| Review trace details about an invocation to identify potential bottlenecks   | AWS X-Ray             |
+| Audit actions made against your applications                                | AWS CloudTrail        |
+
+#### Explanation
+
+Correct! Amazon CloudWatch provides metrics for Lambda functions, dead-letter queues are used to manually review errors, AWS X-Ray is used to review trace details, and AWS CloudTrail is used to audit actions made against your applications.
+
