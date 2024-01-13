@@ -102,3 +102,31 @@ True or false? The number of network interfaces needed by an instance is an impo
 #### Explanation
 
 The number of network interfaces needed by an instance is an important consideration when rightsizing EC2 instances. This is because the number of network interfaces available in EC2 is type specific. For example, a t2.micro instance type allows for a maximum of two network interfaces, while a trn1.32xlarge supports up to eight network interfaces.
+
+## Compatibility Factors in Changing Instance Type
+
+In a rightsizing project, it is determined that the price performance could be improved if current t2.medium x86_64 instances were changed to c6g.large 64-bit Arm Graviton instances to support enhanced networking. What compatibility factors should be considered? (Choose TWO.)
+
+- [x] A new Amazon Machine Image (AMI) will need to be selected for the new instance type, and then the data will need to be migrated.
+- [ ] The new instance type will not require a new Amazon Machine Image (AMI). The instance just needs to be shut down to change the instance type.
+- [x] The paravirtual (PV) virtualization type will change because the new instance will be a hardware virtual machine (HVM) on the Nitro hypervisor.
+- [ ] The virtualization type does not matter because all instance types run on all AWS-supported hypervisors.
+
+#### Explanation
+
+Changing the instance type from x86_64 to Arm Graviton may require a new AMI, and data migration might be necessary. Additionally, the virtualization type may change from paravirtual (PV) to hardware virtual machine (HVM) on the Nitro hypervisor.
+
+## Steps for Changing Instance in an Instance Store-Backed EC2 Instance
+
+When running an instance store-backed EC2 instance, which steps must you take to use a different instance? (Select THREE)
+
+- [x] Create an Amazon Machine Image (AMI) from your existing image.
+- [ ] Create a new EC2 instance.
+- [x] Launch a new instance with the (AMI).
+- [x] Migrate your applications.
+- [ ] No need to migrate. The applications will still be there.
+- [ ] Back up the data in the instance store.
+
+#### Explanation
+
+To use a different instance in an instance store-backed EC2 instance, you need to create an AMI from your existing image, launch a new instance from this AMI, select the instance type that you want, and then migrate your application to the new instance.
