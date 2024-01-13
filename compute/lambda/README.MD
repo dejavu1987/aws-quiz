@@ -112,3 +112,19 @@ A developer has been asked to troubleshoot a Lambda function that is in producti
 #### Explanation
 
 A developer must make sure that a 5-minute duration isn't reflective of a single invocation. Instead of running it once from the console, they need to examine how it actually runs in production. Decreasing the timeout would save costs, but it would probably mean that the function would frequently fail to complete. A best practice is to experiment with different memory configurations and estimate whether a higher memory configuration would actually be less expensive. They can also determine whether there are unnecessary components in the function itself that could be removed to speed up its initialization.
+
+
+## Setting Concurrency Limit on Lambda Function
+
+What are some reasons a developer would set a concurrency limit (or reserve) on a function? (Select THREE.)
+
+- [x] Manage costs
+- [x] Regulate how long it takes to process a batch of events
+- [x] Match the limit with a downstream resource
+- [ ] Help CloudWatch track logging events
+- [ ] Ensure that Amazon Simple Queue Service (Amazon SQS) queues are cleared efficiently
+- [ ] Limit the memory that is used
+
+#### Explanation
+
+Setting a concurrency limit helps manage costs, regulate the processing time for a batch of events, and match the limit with a downstream resource. It is not used to help CloudWatch track logging events, ensure efficient clearing of Amazon SQS queues, or limit memory usage.
