@@ -74,3 +74,32 @@ What gathered data does AWS Trusted Advisor provide its recommendations from? (S
 #### Explanation
 
 AWS Trusted Advisor provides recommendations based on AWS best practices and operational experience gained from serving hundreds of thousands of AWS customers. It does not rely on user forums, customer surveys, or tool feedback questionnaires.
+
+
+## Creating CloudTrail Trail with AWS CLI
+
+Which option can you perform by using AWS CLI to create a trail?
+
+- [ ] Create an all-Regions trail.
+- [x] Create a single-Region trail.
+- [ ] Create both a single-Region and all-Regions trail.
+- [ ] You cannot create a trail from the AWS CLI.
+
+#### Explanation
+
+You can create a single-Region trail using the AWS CLI. The option to create an all-Regions trail is not available.
+
+---
+
+## Managing All-Regions Trail with New Region
+
+What happens to your existing all-Regions trail if you add a new Region to your environment?
+
+- [ ] A new single Region trail must be created.
+- [ ] The new Region must be manually added to the existing trail.
+- [x] The new Region is automatically added to the trail.
+- [ ] You must delete and recreate the all-Regions trail.
+
+#### Explanation
+
+If a Region is added after you create an all-Regions trail, the new Region is automatically included in the trail, and events in that Region are logged. There is no need to manually add the new Region or delete and recreate the all-Regions trail.
