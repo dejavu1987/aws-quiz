@@ -261,10 +261,10 @@ AWS Compute Optimizer provides recommendations for both downsizing and upsizing 
 
 The following steps are used to change the instance type of an EBS-backed instance when the new instance type is compatible with the original instance type. Which is the correct order of the steps?
 
-- [x] 1– Stop the instance; 2 – Select the new instance type; 3 – Install new drivers; 4 – Start the instance from the Amazon EC2 console.
+- [x] 1– Install new drivers; 2 – Stop the instance; 3 – Select the new instance type; 4 – Start the instance from the Amazon EC2 console. 
+- [ ] 1– Stop the instance; 2 – Select the new instance type; 3 – Install new drivers; 4 – Start the instance from the Amazon EC2 console.
 - [ ] 1– Stop the instance; 2 – Select the new instance type; 3 – Start the instance from the Amazon EC2 console; 4 – Install new drivers.
 - [ ] 1– Select the new instance type; 2 – Install new drivers; 3 – Stop the instance; 4 – Start the instance from the Amazon EC2 console.
-- [ ] 1– Stop the instance; 2 – Select the new instance type; 3 – Install new drivers; 4 – Start the instance from the Amazon EC2 console.
 
 #### Explanation
 
