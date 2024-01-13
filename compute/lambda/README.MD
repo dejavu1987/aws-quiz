@@ -30,7 +30,34 @@ Which statements about invocation models are correct? (Select THREE.)
 Correct! Amazon S3 and Amazon API Gateway use asynchronous and synchronous push models, respectively. For Alexa, there are no automatic retries, and DynamoDB does not require an execution role for invoking Lambda. Amazon SQS uses the polling invocation model for triggering Lambda.
 
 
+## IAM Entities for Lambda Function Interaction
 
+What IAM entities must be included in an execution role for a Lambda function to interact with other services, such as DynamoDB? (Select TWO.)
 
+- [x] IAM policy that defines the actions that can be taken within DynamoDB
+- [x] Trust policy that grants "AssumeRole" permission to Lambda to act on DynamoDB
+- [ ] IAM group defining users of the Lambda function
+- [ ] IAM user with admin permissions to Lambda and DynamoDB
+
+#### Explanation
+
+You need both the IAM policy that defines the actions Lambda can take and a trust policy that grants Lambda the "AssumeRole" permission. You do not have to create any IAM users or groups to allow Lambda to take action.
+
+---
+
+## Resource Policy in AWS Lambda
+
+Which of these statements describe a resource policy? (Select THREE.)
+
+- [ ] Must be chosen or created when you create a Lambda function
+- [x] Can give Amazon S3 permission to initiate a Lambda function
+- [ ] Can give Lambda permission to write data to a DynamoDB table
+- [x] Can grant access to the Lambda function across AWS accounts
+- [x] Determines who has access to invoke the function
+- [ ] Determines what Lambda is allowed to do
+
+#### Explanation
+
+Correct! A resource policy determines who can initiate your function (e.g., Amazon S3), grants access across accounts, and controls who has access to invoke the function. It is not chosen or created when creating a Lambda function and does not specify what Lambda is allowed to do; that is controlled by the execution role's IAM policy.
 
 
