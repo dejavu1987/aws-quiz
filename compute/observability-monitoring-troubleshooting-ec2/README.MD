@@ -59,3 +59,18 @@ The Amazon CloudWatch agent must be used to collect which type of data?
 #### Explanation
 
 To collect host-level metrics and logs, the CloudWatch agent must be installed. This is necessary to capture additional internal system metrics, such as memory utilization, that are not sent to the CloudWatch service by default.
+
+
+## AWS Trusted Advisor Data Source
+
+What gathered data does AWS Trusted Advisor provide its recommendations from? (Select TWO.)
+
+- [x] AWS best practices
+- [ ] Information gathered in user forums
+- [x] AWS operational experience
+- [ ] Data collected in customer surveys
+- [ ] AWS tool feedback questionnaires
+
+#### Explanation
+
+AWS Trusted Advisor provides recommendations based on AWS best practices and operational experience gained from serving hundreds of thousands of AWS customers. It does not rely on user forums, customer surveys, or tool feedback questionnaires.
