@@ -1,4 +1,4 @@
-## AWS Quiz with Explanations
+## AWS Quiz (Solved and Explained by ChatGPT)
 
 ### 1)
 Your organization is expanding its AWS footprint into new regions, but they want the VPCs to communicate with each other. 
